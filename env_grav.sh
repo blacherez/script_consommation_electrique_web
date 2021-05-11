@@ -1,10 +1,20 @@
-export COLL_SENSOR=sensor_grav
-export COLL_FORMULA=formula_grav
+# Collection Mongodb du capteur
+export COLLECTION=sensor_grav
+
+# Nom du capteur
 export NAME=sensor_grav
 
-export NB=10000
+# Collection Mongodb des données du capteur
+export INPUT_COL=$COLLECTION
+
+# Collection Mongodb de stockage des estimations
+export OUTPUT_COL=formula_grav
+
+# URL à utiliser pour les tests
 export URL_TEST=http://localhost/grav/
 
-export FICHIER=data_grav.csv
+
+# Fichier CSV de stockage des estimations
+export FICHIER=../data_grav.csv
 
 echo $NAME
