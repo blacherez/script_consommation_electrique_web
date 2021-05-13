@@ -21,11 +21,11 @@ export MAX_CPU_RATIO=35
 
 
 # Temps d'attente (en secondes) entre le lancement des containers et les tests
-export ATTENTE_INITIALE=10
+export ATTENTE_INITIALE=60
 
 # Temps d'attente (en secondes) entre la fin des tests et l'arrêt des containers
-export ATTENTE_FINALE=10
+export ATTENTE_FINALE=60
 
 
 # Nombre de requêtes à envoyer
-export NB=100
+export NB=1000
