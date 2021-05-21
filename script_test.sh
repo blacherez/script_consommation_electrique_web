@@ -1,8 +1,9 @@
 echo $NAME
 
 echo Suppression des collections
-mongo --host $ADDR --eval "db.$COLLECTION.drop()" $DB
-mongo --host $ADDR --eval "db.$OUTPUT_COL.drop()" $OUTPUT_DB
+echo Par défaut, la suppression des collections est désactivée. Enlevez les \# des deux lignes correspondantes pour l'activer.'
+#mongo --host $ADDR --eval "db.$COLLECTION.drop()" $DB
+#mongo --host $ADDR --eval "db.$OUTPUT_COL.drop()" $OUTPUT_DB
 
 echo Lancement des containers
 SENSOR_ID=`docker run --net=host --privileged --name powerapi-sensor -d \
