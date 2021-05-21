@@ -42,7 +42,7 @@ echo $FORMULA_ID
 echo Attente
 sleep $ATTENTE_INITIALE
 echo Test
-ab -n $NB $URL_TEST
+python browser_selenium.py $NB $URL_TEST
 
 echo Attente
 sleep $ATTENTE_FINALE
