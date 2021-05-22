@@ -5,11 +5,10 @@ import sys
 
 nb = sys.argv[1]
 url = sys.argv[2]
-print(nb)
-
 
 with webdriver.Firefox() as driver:
     wait = WebDriverWait(driver, 10)
     driver.get(url)
     for i in range(1, int(nb)):
+        print("Url : %s | %s / %s" % (url, i, nb))
         driver.refresh()
