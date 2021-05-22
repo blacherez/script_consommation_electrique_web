@@ -43,7 +43,7 @@ sh script_test.sh
 #mongo --host $ADDR --eval "db.$OUTPUT_COL.drop()" $OUTPUT_DB
 ```
 
-**Ces lignes sont mises en commentaire par défaut pour éviter toute suppression accidentelle de données, mais la suite du script (en particulier l'export CSV suppose que les collections ne contiennent pas d'autres données que celles du test en cours.)**
+**Ces lignes sont mises en commentaire par défaut pour éviter toute suppression accidentelle de données, mais la suite du script (en particulier l'export CSV) suppose que les collections ne contiennent pas d'autres données que celles du test en cours.**
 
 - Lancer le test en exécutant `cid.sh` :
 
