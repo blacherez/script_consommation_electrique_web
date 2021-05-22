@@ -36,11 +36,18 @@ sh script_test.sh
 
 (Attention de ne pas oublier le point en début de première ligne.)
 
+- Activez la suppression des collections au début du script `script_test.sh` en enlevant les `#` au début des deux lignes :
+
+```bash
+#mongo --host $ADDR --eval "db.$COLLECTION.drop()" $DB
+#mongo --host $ADDR --eval "db.$OUTPUT_COL.drop()" $OUTPUT_DB
+```
+
+Ces lignes sont mises en commentaire par défaut pour éviter toute suppression accidentelle de données, mais la suite du script (en particulier l'export CSV suppose que les collections ne contiennent pas d'autres données que celles du test en cours.)
+
 - Lancer le test en exécutant `cid.sh` :
 
 ```bash
 $ sh cid.sh
 ```
 - Les résultats des tests seront enregistrés dans des fichiers CSV (dont les noms sont définis dans le fichier de chaque scénario).
-
- 
