@@ -11,6 +11,8 @@ Le script principal, `cid.sh`, exécute le test individuel, `script_test.sh`, po
 
 - Le test en lui-même peut alors être exécuté (`script_test.sh`).
 
+**NB : dans son état actuel, ce script est prévu pour être lancé sur une seule machine, qui exécute à la fois le client et le serveur. Il est néanmoins facile de l'adapter en séparant les parties "client" et "serveur".**
+
 ## Prérequis
 
 - Les prérequis de PowerAPI (voir http://www.powerapi.org/)
