@@ -15,6 +15,6 @@ export URL_TEST=http://localhost/powerwp/
 
 
 # Fichier CSV de stockage des estimations
-export FICHIER=../data_wp.csv
+export FICHIER=../data_wp_selenium8.csv
 
 echo $NAME

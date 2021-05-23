@@ -15,6 +15,6 @@ export URL_TEST=http://localhost/statique/page_statique.html
 
 
 # Fichier CSV de stockage des estimations
-export FICHIER=../data_statique.csv
+export FICHIER=../data_statique_selenium8.csv
 
 echo $NAME

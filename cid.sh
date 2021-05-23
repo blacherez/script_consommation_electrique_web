@@ -16,3 +16,6 @@ sh script_test.sh
 
 . ./env_grav.sh
 sh script_test.sh
+
+. ./env_statique2.sh
+sh script_test.sh
